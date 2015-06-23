@@ -66,14 +66,61 @@
 <li>Servers</li>
 </ul>
 </section>
+<section id="why-flexibility" class="slide">
+<h1>It&#39;s flexible</h1><p>Tools like ZSH and prezto allow you to make it work the way you want.</p>
+<pre><code>~/w/<span class="hljs-keyword">cli</span>-intro ❯❯❯                                           master ◼
+</code></pre>
 </section>
-<section id="notes" class="slide">
-<h2>Speaker notes</h2><p>Hit <code>s</code> on your keyboard to display speaker notes</p><aside class="notes"><p>Here are the secret speaker notes!</p>
-<p>Use <code>--such-notes</code> if they deserve better treatment.</p></aside>
 </section>
-<section id="goodbye" class="slide">
-<h2>Goodbye</h2><p>Don&#39;t hesitate to give us feedback about <a href="https://github.com/lmtm/prez">prez on GitHub</a>!</p>
-<p>Thanks</p>
+<section>
+<section id="start-start" class="slide">
+<h1>Let&#39;s start</h1>
+</section>
+<section id="start-pop-a-term" class="slide">
+<h1>Pop a Terminal</h1><p>Built-in Terminal or iTerm2</p>
+<p>iTerm2 fixes some nitpicks and is great if you are a Linux user</p>
+</section>
+<section id="start-moving" class="slide">
+<h2>Change Directory (cd)</h2>
+<pre><code class="nohighlight">zurich:~ kurt$<span class="fragment"> ls</span>
+<span class="fragment">Applications   Documents   Dropbox     Dropbox (The Iron Yard) Movies      Pictures    VirtualBox VMs    keys
+Desktop     Downloads   Dropbox (Personal)  Library     Music     Public      alfred      workspace
+zurich:~ kurt$</span><span class="fragment"> cd Downloads</span>
+<span class="fragment">zurich:Downloads kurt$</span><span class="fragment"> pwd</span>
+<span class="fragment">/Users/kurt/Downloads
+zurich:Downloads kurt$</span><span class="fragment"> cd ..</span>
+<span class="fragment">zurich:~ kurt$</span>
+</code></pre>
+</section>
+</section>
+<section>
+<section id="theory-01" class="slide">
+<h1>Shell Theory</h1><h3>(or where am I?)</h3>
+</section>
+<section id="theory-nodes" class="slide">
+<h1>Files &amp; directories</h1><ul>
+<li>You operate with these</li>
+<li>Act similarly, directories just also hold files</li>
+<li>Everything has a path, absolute or relative</li>
+</ul>
+</section>
+<section id="theory-paths" class="slide">
+<h1>Paths</h1><p>Absolute: <code>/Users/kurt</code><br>Relative: <code>../../Downloads</code><br>And home: <code>~</code></p>
+</section>
+<section id="theory-permissions" class="slide">
+<h1>Permissions</h1><pre><code>~/Downloads ❯❯❯ ls -l                                                      master ✱ ◼
+total 206328
+-rw-r-----@ 1 kurt  staff   9390250 Jun 22 09:31 Genymotion-ARM-Translation_v1.1.zip
+drwx------@ 9 kurt  staff       306 Jun 23 13:38 TIY-Logo
+-rw-r-----@ 1 kurt  staff  96246158 Jun 22 09:23 gapps-L-4-21-15.zip
+</code></pre>
+</section>
+<section id="theory-pipes" class="slide">
+<h1>Pipes</h1><p>Allow chaining of commands</p>
+<pre><code>~ ❯❯❯ <span class="hljs-keyword">ls</span> | <span class="hljs-keyword">grep</span> Downloads
+Downloads
+</code></pre>
+</section>
 </section></div>
     </div>
 
